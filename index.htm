@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="de"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Barrierefreiheit Checkliste – UX &amp; UI&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>h1, h2 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 2px 6px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>a {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #0077cc;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: underline;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const checkboxes = document.querySelectorAll('input[type="checkbox"]');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>checkboxes.forEach(cb =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const saved = localStorage.getItem(cb.id);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (saved === 'true') cb.checked = true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cb.addEventListener('change', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>localStorage.setItem(cb.id, cb.checked);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;Barrierefreiheit Checkliste – UX &amp; UI&lt;/h1&gt;</p>
+<p class="p1">&lt;p&gt;Diese Checkliste kombiniert unsere &lt;strong&gt;Masterliste&lt;/strong&gt; mit bewährten Punkten aus der &lt;a href="https://www.a11yproject.com/checklist/" target="_blank"&gt;A11Y Project Checklist&lt;/a&gt;. Fortschritte werden im Browser gespeichert.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1">&lt;h2&gt;UX-Design&lt;/h2&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux1"&gt; Farbkontraste nach &lt;a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank"&gt;WCAG 2.1&lt;/a&gt; prüfen&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux2"&gt; Inhalte und Navigation per Tastatur vollständig nutzbar&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux3"&gt; Alternative Texte für Bilder vorhanden und aussagekräftig&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux4"&gt; Überschriften-Hierarchie korrekt (H1-H6) umgesetzt&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux5"&gt; Formulare mit klaren Labels und Fehlermeldungen&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux6"&gt; Fokus-Indikatoren sichtbar und gut erkennbar&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux7"&gt; Keine rein farbbasierte Informationsvermittlung&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux8"&gt; Animationen optional deaktivierbar (&lt;a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target="_blank"&gt;prefers-reduced-motion&lt;/a&gt;)&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux9"&gt; Inhalte auch ohne Maus oder Touchscreen zugänglich&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ux10"&gt; Konsistentes Layout und Navigation auf allen Seiten&lt;/label&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="section"&gt;</p>
+<p class="p1">&lt;h2&gt;UI-Design&lt;/h2&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui1"&gt; Schriftgrößen relativ definiert (rem/em) und skalierbar&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui2"&gt; Mindest-Klickfläche für interaktive Elemente: 44x44px&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui3"&gt; Farbkombinationen mit ausreichendem Kontrastverhältnis&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui4"&gt; Buttons und Links klar unterscheidbar vom Fließtext&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui5"&gt; Fokuszustände optisch klar vom normalen Zustand abheben&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui6"&gt; Keine Texte in Bildern ohne Alternative&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui7"&gt; Responsives Layout für unterschiedliche Geräte&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui8"&gt; Farbkontraste für Icons und UI-Elemente ebenfalls geprüft&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui9"&gt; Medien (Video/Audio) mit Untertiteln oder Transkripten&lt;/label&gt;</p>
+<p class="p1">&lt;label&gt;&lt;input type="checkbox" id="ui10"&gt; Kein Inhalt verschwindet oder überlappt bei Zoom 200%&lt;/label&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;em&gt;Letzte Aktualisierung: August 2025&lt;/em&gt;&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
